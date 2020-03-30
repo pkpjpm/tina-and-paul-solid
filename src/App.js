@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import BradyBunch from './BradyBunch';
 import SlideShow from './SlideShow';
@@ -41,11 +41,12 @@ function App() {
         </div>
       </nav>
       <BrowserRouter>
-        <div>
+        <Switch>
           <Route exact path="/" component={BradyBunch} />
           <Route path="/slide-show/:showType" component={SlideShow} />
+          <Route path="/about/:aboutWhat/:aboutWhen" component={About} />
           <Route path="/about/:aboutWhat" component={About} />
-        </div>
+        </Switch>
       </BrowserRouter>
     </div>
   );
