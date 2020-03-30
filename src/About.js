@@ -1,4 +1,5 @@
 import React from "react";
+import PathHelper from './pathHelper';
 
 function About( { match: { params } } ) {
     var tabStrip = function(showTabs, when) {
@@ -19,10 +20,10 @@ function About( { match: { params } } ) {
                     {alert(oldSite)}
                     <ul className="nav nav-tabs">
                       <li className="nav-item">
-                        <a className={oldSite ? "nav-link active" : "nav-link"} href={`/about/${what}/2002`}>2002</a>
+                        <a className={oldSite ? "nav-link active" : "nav-link"} href={PathHelper(`about/${what}/2002`)}>2002</a>
                       </li>
                       <li className="nav-item">
-                        <a className={!oldSite ? "nav-link active" : "nav-link"} href={`/about/${what}/2020`}>2020</a>
+                        <a className={!oldSite ? "nav-link active" : "nav-link"} href={PathHelper(`about/${what}/2020`)}>2020</a>
                       </li>
                     </ul>                                    
                 </React.Fragment>
