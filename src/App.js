@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './App.css';
 import BradyBunch from './BradyBunch';
 import SlideShow from './SlideShow';
 import About from './About';
