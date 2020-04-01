@@ -2,7 +2,7 @@ import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import BradyBunch from './BradyBunch';
 import SlideShow from './SlideShow';
-import About from './About';
+import About from './about/About';
 import PathHelper from './pathHelper';
 
 function App() {

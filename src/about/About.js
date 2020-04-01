@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import PathHelper from './pathHelper';
-import { DISMISS_LEGACY_INFO } from './actions/actionTypes';
+import PathHelper from '../pathHelper';
+import { DISMISS_LEGACY_INFO } from '../actions/actionTypes';
 import PaulWithAntlers01 from './PaulWithAntlers01.jpg';
 import Tina02 from './Tina02.jpg';
 import AmplifiedJack from './AmplifiedJack.jpg';
