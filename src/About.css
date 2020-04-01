@@ -1,0 +1,33 @@
+.legacy-page
+{
+	color: #cc0066;
+	font-family: Verdana;
+    background-color: #cc99ff;
+    padding: 40px;
+}
+.legacy-page a:link
+{
+	color: #ffff33;
+	font-family: Verdana;
+}
+.legacy-page a:active
+{
+	color: #ff0099;
+	font-family: Verdana;
+}
+.legacy-page a:visited
+{
+	color: #009933;
+	font-family: Verdana;
+}
+.legacy-page p
+{
+	font-size: 10pt;
+	font-family: Verdana;
+}
+.legacy-page h1
+{
+	font-weight: bold;
+	font-size: 14pt;
+	font-family: Verdana;
+}
