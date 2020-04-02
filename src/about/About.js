@@ -17,7 +17,6 @@ class About extends React.Component {
     constructor(props) {
         super(props);
         this.dismissAlert = this.dismissAlert.bind(this);
-        console.log(this);
     }
     dismissAlert() {      
         this.props.dismissLegacyInfo();        
@@ -93,7 +92,6 @@ class About extends React.Component {
 
 export default (function () {
     function mapStateToProps(state) {
-        console.log(state);
         return { showLegacyInfo: state.showLegacyInfo };
     }
 

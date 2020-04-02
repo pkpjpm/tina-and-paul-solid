@@ -7,18 +7,18 @@ export function HowWeMet()
 {
     return (
         <div className="legacy-page">
-            <h1>Paul and Tina Meet</h1>
+            <h1>Tina and Paul Meet</h1>
             <p>Tina and Paul met at a party at Lydia's apartment on August 26, 2000.&nbsp; Tina 
                 was the first guest to arrive, and Paul was the second.&nbsp; Tina admired 
                 Paul's vegetable chopping skills.&nbsp; Paul was intrigued by Tina's dancing 
                 and encyclopedic knowledge of film, popular music, and show tunes.</p>
             <p>Paul walked Tina home that night, and the 
                     rest you can guess.</p>
-            <h1>Paul and Tina are Betrothed</h1>
+            <h2>Paul and Tina are Betrothed</h2>
             <p>Paul proposed to Tina on Leavenworth Street 
                     between Sutter and Post on Valentine's Day.&nbsp; It was a wonderful evening 
                     that included dinner at Fino and a performance by the San Francisco Ballet.</p>
-            <h1>Paul and Tina Live in Sin</h1>
+            <h2>Paul and Tina Live in Sin</h2>
             <p><img alt="Jack surveys the post move landscape" src={AmplifiedJack} width="512" height="384" /></p>
             <p>Paul is now happily cohabitating with Tina.&nbsp; We decided to keep Tina's 
                 apartment, because she has HBO.&nbsp; This is only three blocks away from 

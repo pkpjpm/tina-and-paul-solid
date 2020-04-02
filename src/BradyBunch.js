@@ -9,6 +9,7 @@ function BradyBunch () {
 
     return (
         <div style={{backgroundColor: "blue"}}>
+            <h1>Tina &amp; Paul</h1>
             <div className="container-md" style={{backgroundColor: "orange"}}>
                 <div className="row">
                     <div className="col-4">{panel()}</div>

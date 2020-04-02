@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import BradyBunch from './BradyBunch';
 import SlideShow from './SlideShow';
 import About from './about/About';
@@ -40,14 +40,12 @@ function App() {
           </ul>
         </div>
       </nav>
-      <HashRouter>
-        <Switch>
-          <Route exact path="/" component={BradyBunch} />
-          <Route path="/slide-show/:showType" component={SlideShow} />
-          <Route path="/about/:aboutWhat/:aboutWhen" component={About} />
-          <Route path="/about/:aboutWhat" component={About} />
-        </Switch>
-      </HashRouter>
+      <Switch>
+        <Route exact path="/" component={BradyBunch} />
+        <Route path="/slide-show/:showType" component={SlideShow} />
+        <Route path="/about/:aboutWhat/:aboutWhen" component={About} />
+        <Route path="/about/:aboutWhat" component={About} />
+      </Switch>
     </div>
   );
 }
