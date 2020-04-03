@@ -1,14 +1,14 @@
 import React from "react";
 import { render, fireEvent } from '@testing-library/react';
 import About from './About';
-import { aboutReducer } from './aboutActions';
+import rootReducer from '../reducers';
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 
 const ALERT_BOX_MATCHER = /View the original 2002 content.*/;
 
 function testForElementAtPath(pathParams, elementMatch) {
-    const store = createStore(aboutReducer);
+    const store = createStore(rootReducer);
     const { queryByText } = render(
         <Provider store={store}>
             <About match={{ params: pathParams }} />
@@ -52,7 +52,7 @@ test('Ceremony page does not have an alert', () => {
 });
 
 test('Close click will dismiss the info alert', () => {
-    const store = createStore(aboutReducer);
+    const store = createStore(rootReducer);
     const { getByRole, queryByText } = render(
         <Provider store={store}>
             <About match={{ params: { aboutWhat: "tina", aboutWhen: "2002" } }} />

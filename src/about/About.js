@@ -92,7 +92,7 @@ class About extends React.Component {
 
 export default (function () {
     function mapStateToProps(state) {
-        return { showLegacyInfo: state.showLegacyInfo };
+        return { showLegacyInfo: state.aboutReducer.showLegacyInfo };
     }
 
     function mapDispatchToProps(dispatch) {
