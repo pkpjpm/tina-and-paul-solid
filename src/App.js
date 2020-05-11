@@ -40,12 +40,14 @@ function App() {
           </ul>
         </div>
       </nav>
-      <Switch>
-        <Route exact path="/" component={BradyBunch} />
-        <Route path="/slide-show/:showType" component={SlideShow} />
-        <Route path="/about/:aboutWhat/:aboutWhen" component={About} />
-        <Route path="/about/:aboutWhat" component={About} />
-      </Switch>
+      <main>
+        <Switch>
+          <Route exact path="/" component={BradyBunch} />
+          <Route path="/slide-show/:showType" component={SlideShow} />
+          <Route path="/about/:aboutWhat/:aboutWhen" component={About} />
+          <Route path="/about/:aboutWhat" component={About} />
+        </Switch>        
+      </main>
     </div>
   );
 }

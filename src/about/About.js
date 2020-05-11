@@ -38,10 +38,14 @@ class About extends React.Component {
                     {this.alertBox()}
                     <ul className="nav nav-tabs">
                       <li className="nav-item">
-                        <a className={this.oldSite ? "nav-link active" : "nav-link"} href={PathHelper(`about/${this.what}/2002`)}>2002</a>
+                        <a className={this.oldSite ? "nav-link active" : "nav-link"} 
+                            href={PathHelper(`about/${this.what}/2002`)}
+                            aria-label="show version from 2002">2002</a>
                       </li>
                       <li className="nav-item">
-                        <a className={!this.oldSite ? "nav-link active" : "nav-link"} href={PathHelper(`about/${this.what}/2020`)}>2020</a>
+                        <a className={!this.oldSite ? "nav-link active" : "nav-link"} 
+                            href={PathHelper(`about/${this.what}/2020`)}
+                            aria-label="show version from 2020">2020</a>
                       </li>
                     </ul>                                    
                 </React.Fragment>
@@ -84,7 +88,9 @@ class About extends React.Component {
         return (
             <div>
                 {this.tabStrip(showTabs, this.when)}
-                {contentBody}
+                <article>
+                    {contentBody}
+                </article>
             </div>
         );
     }
