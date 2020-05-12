@@ -3,7 +3,8 @@ import ImageGallery from 'react-image-gallery';
 import './SlideShow.css';
 import {chicagoImages} from './shows/chicago/chicago';
 import {parisImages} from './shows/paris/paris';
-
+import {receptionImages} from './shows/reception/reception';
+import {engagementImages} from './shows/engagement/engagement';
 
 function SlideShow ( { match: { params } } ) {
     let show = params.showType || 'paris';
@@ -18,10 +19,12 @@ function SlideShow ( { match: { params } } ) {
 
         case 'engagement':
             caption = "The Engagement Party";
+            images = engagementImages;
             break;
 
         case 'reception':
             caption = "The Reception";
+            images = receptionImages;
             break;
 
         case 'chicago':
