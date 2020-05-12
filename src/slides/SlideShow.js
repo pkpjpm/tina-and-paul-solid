@@ -2,6 +2,7 @@ import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import './SlideShow.css';
 import {chicagoImages} from './shows/chicago/chicago';
+import {parisImages} from './shows/paris/paris';
 
 
 function SlideShow ( { match: { params } } ) {
@@ -12,6 +13,7 @@ function SlideShow ( { match: { params } } ) {
     switch(show) {
         case 'paris':
             caption = "Honeymoon in Paris";
+            images = parisImages;
             break;
 
         case 'engagement':
@@ -25,6 +27,9 @@ function SlideShow ( { match: { params } } ) {
         case 'chicago':
             caption = "2005 Trip to Chicago";
             images = chicagoImages;
+            break;
+
+        default:
             break;
     }
 
