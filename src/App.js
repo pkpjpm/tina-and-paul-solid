@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import BradyBunch from './BradyBunch';
-import SlideShow from './SlideShow';
+import SlideShow from './slides/SlideShow';
 import About from './about/About';
 import PathHelper from './pathHelper';
 
@@ -24,6 +24,7 @@ function App() {
                 <a className="dropdown-item" href={PathHelper("slide-show/paris")}>Paris Honeymoon</a>
                 <a className="dropdown-item" href={PathHelper("slide-show/engagement")}>Engagement Party</a>
                 <a className="dropdown-item" href={PathHelper("slide-show/reception")}>Reception</a>
+                <a className="dropdown-item" href={PathHelper("slide-show/chicago")}>Chicago 2005</a>
               </div>
             </li>
             <li className="nav-item dropdown">

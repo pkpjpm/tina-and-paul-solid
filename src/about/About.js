@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import PathHelper from '../pathHelper';
-//import { DISMISS_LEGACY_INFO } from '../actions/actionTypes';
 import { dismissLegacyInfoAction } from './aboutActions';
 import './About.css';
 import { OldAboutTina } from "./OldAboutTina";
