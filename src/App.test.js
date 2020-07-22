@@ -36,15 +36,15 @@ function testNavigationLink( menuLabelRegex, targetHeadingRegex ) {
 }
 
 test('Paris slide show navigation works', () => {
-  testNavigationLink("Paris Honeymoon", "The paris slide show");
+  testNavigationLink("Paris Honeymoon", "Honeymoon in Paris");
 });
  
 test('Engagement slide show navigation works', () => {
-  testNavigationLink("Engagement Party", "The engagement slide show");
+  testNavigationLink("Engagement Party", "The Engagement Party");
 });
 
 test('Reception slide show navigation works', () => {
-  testNavigationLink("Reception", "The reception slide show");
+  testNavigationLink("Reception", "The Reception");
 });
 
 test('About Tina navigation works', () => {
