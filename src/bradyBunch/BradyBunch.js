@@ -12,7 +12,10 @@ import Anniversary from './Anniversary.jpg';
 function BradyBunch () {
     let panel = function (description, image, link) {
         return (
-            <a href={link}><img alt={description} src={image} /></a>
+            <div className="col-sm-4"><a href={link}>
+                <img alt={description} src={image} 
+                    style={{height:250, width:250, padding:3}} />
+            </a></div>
         );
     }
 
@@ -22,19 +25,19 @@ function BradyBunch () {
             <h1>Tina &amp; Paul</h1>
             <div className="container-md">
                 <div className="row">
-                    <div className="col-4">{panel('Pete', Pete, '#/about/ceremony')}</div>
-                    <div className="col-4">{panel('Tina', Tina, '#/about/tina')}</div>
-                    <div className="col-4">{panel('Jack', Jack, '#')}</div>
+                    {panel('Pete', Pete, '#/about/ceremony')}
+                    {panel('Tina', Tina, '#/about/tina')}
+                    {panel('Jack', Jack, '#/slide-show/paris')}
                 </div>
                     <div className="row">
-                    <div className="col-4">{panel('Pearl', Pearl, '#/slide-show/engagement')}</div>
-                    <div className="col-4">{panel('Paul', Paul, '#/about/paul')}</div>
-                    <div className="col-4">{panel('André', Andre, '#/about/how-we-met')}</div>
+                    {panel('Pearl', Pearl, '#/slide-show/engagement')}
+                    {panel('Paul', Paul, '#/about/paul')}
+                    {panel('André', Andre, '#/about/how-we-met')}
                 </div>
                     <div className="row">
-                    <div className="col-4">{panel('Cyril', Cyril, '#')}</div>
-                    <div className="col-4">{panel('Anniversary', Anniversary, '#')}</div>
-                    <div className="col-4">{panel('Jules', Jules, '#')}</div>
+                    {panel('Cyril', Cyril, '#/slide-show/reception')}
+                    {panel('Anniversary', Anniversary, '#')}
+                    {panel('Jules', Jules, '#/slide-show/chicago')}
                 </div>            
             </div>
         </div>
