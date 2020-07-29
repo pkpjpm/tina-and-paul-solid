@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import BradyBunch from './BradyBunch';
+import BradyBunch from './bradyBunch/BradyBunch';
 import SlideShow from './slides/SlideShow';
 import About from './about/About';
 import PathHelper from './pathHelper';
