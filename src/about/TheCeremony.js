@@ -14,16 +14,17 @@ export function TheCeremony() {
             </p>
             <p>The wedding party also included:</p>
             <h3>Bridesmaids:</h3>
-            <p>
-                Barbara Fabrizio - Matron of Honor<br />
-                Lydia Lowery<br />
-                Emily Curtis
-            </p>
+            <ul>
+                <li>Barbara Fabrizio - Matron of Honor</li>
+                <li>Lydia Lowery</li>
+                <li>Emily Curtis</li>
+            </ul>
             <h3>Groomsmen:</h3>
-            <p>
-                Steve Bauer - Best Man<br />
-                Symon Michael<br />
-                Robin Givens</p>
+            <ul>
+                <li>Steve Bauer - Best Man</li>
+                <li>Symon Michael</li>
+                <li>Robin Givens</li>
+            </ul>
             <h2>When</h2>
             <p>The ceremony was held on Saturday, October 12, 2002</p>
             <h2>Where</h2>

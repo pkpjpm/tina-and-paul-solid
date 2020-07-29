@@ -3,7 +3,8 @@
 	color: #cc0066;
 	font-family: Verdana;
     background-color: #cc99ff;
-    padding: 40px;
+	padding-right: 40px;
+	padding-left: 40px;
 }
 .legacy-page a:link
 {
@@ -20,7 +21,7 @@
 	color: #009933;
 	font-family: Verdana;
 }
-.legacy-page p
+.legacy-page p, .legacy-page li
 {
 	font-size: 10pt;
 	font-family: Verdana;
@@ -29,5 +30,17 @@
 {
 	font-weight: bold;
 	font-size: 14pt;
-	font-family: Verdana;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.legacy-page h2
+{
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.legacy-page h3
+{
+	text-decoration: underline;
+	font-size: 10pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

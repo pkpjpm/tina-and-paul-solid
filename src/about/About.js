@@ -7,8 +7,10 @@ import { OldAboutTina } from "./OldAboutTina";
 import { OldAboutPaul } from "./OldAboutPaul";
 import { HowWeMet } from "./HowWeMet";
 import { TheCeremony } from "./TheCeremony";
+/*
 import { AboutTina } from "./AboutTina";
 import { AboutPaul } from "./AboutPaul";
+*/
 
 class About extends React.Component {
     what;
@@ -61,15 +63,21 @@ class About extends React.Component {
         let contentBody = "";
         switch(this.what){
             case 'tina':
+                /*
                 showTabs = true;
                 this.prettyWhat = "Tina";
                 contentBody = this.oldSite ? <OldAboutTina /> : <AboutTina />;
+                */
+                contentBody = <OldAboutTina />;
                 break;
 
             case 'paul':
+                /*
                 showTabs = true;
                 this.prettyWhat = "Paul";
                 contentBody = this.oldSite ? <OldAboutPaul /> : <AboutPaul />;
+                */
+                contentBody = <OldAboutPaul />;
                 break;
 
             case 'how-we-met':
