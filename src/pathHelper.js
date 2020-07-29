@@ -1,5 +1,5 @@
 function PathHelper(path) {
-    return "/react-test/#/" + path;
+    return "/#/" + path;
 }
 
 export default PathHelper;
